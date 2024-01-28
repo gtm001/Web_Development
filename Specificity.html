@@ -1,0 +1,54 @@
+<!-- About CSS Specifier. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Specificity</title>
+
+    <style>
+        p.yellow{
+            color:yellow; /* It's value will be 1+10=11 (element+class specifier) */
+        }
+        /* .cred{
+            color:red !important; 
+        } */
+        .cpurple{   /*It's value is 10 (class specifier)*/
+            color:purple;
+        }
+
+/* 
+        a.harryclass.rohan-class[href]:hover {
+            color: red;
+
+        "   Element selectors: a contributes 1 point.
+            Class selectors: .harryclass and .rohan-class each contributes 10 points, totaling 20 points.
+            Attribute selector: [href] contributes 10 points.
+            Pseudo-class: :hover adds another 10 points.
+            Add up all these values:
+
+            1 (element) + 20 (classes) + 10 (attribute) + 10 (pseudo-class) = 41."
+
+        } */
+
+
+    </style>
+</head>
+<body>
+    <p class="yellow cred cpurple"> Let's See the Conflict!</p>
+    <!-- so, as you can see that the purple is visible, in case if there is only .classname.
+    Reason:- 1.POSITION AND ORDER OF APPERANCE., so the last updated condition will be taken that is Purple. -->
+
+    <!-- Specificity: INLINE SELECTOR > ID SELECTOR > CLASS OR ATTRIBUTE > ELEMENT > UNIVERSAL SELECTOR  -->
+
+    <!-- IMPORTANT: so, by adding !important , it's most prior even more than the Inline selector -->
+
+    <!-- SPECIFIER VALUE:-
+    INLINE - 1000
+    ID - 100
+    CLASS/ATTRIBUTE/PSEUDO CLASS - 10
+    ELEMENT - 1
+    UNIVERSAL - 0  -->
+</body>
+</html>
