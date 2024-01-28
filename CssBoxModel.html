@@ -1,0 +1,44 @@
+<!-- CSS BoxModel -->
+
+<html>
+<head>
+<title>
+CSS Boxmodel
+</title>
+<style>
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.box{
+    background-color: aqua;
+}
+
+.box1{
+    color:yellow;
+    padding:10px;
+    margin:25px;
+    border:2px solid blue;
+    height:200px; /* it'll only define 200px height of the element only!*/
+    box-sizing:border-box; /*but, by adding this height 200px combines the height of "element+padding+border"*/
+}
+
+.box2{
+    color:red;
+    padding:10px;
+    margin:5px;
+    border:2px solid black;
+    height:200px;  
+    box-sizing:border-box;
+}
+/* Margin Collapse:- if the size of the two margin is given then, the greater size-margin will taken always! */
+
+</style>
+</head>
+<body>
+    <div class="box box1">i am Box.</div>
+    <div class="box box2">i am another Box.</div>
+</body>
+</html>
