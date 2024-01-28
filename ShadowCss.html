@@ -1,0 +1,39 @@
+<!-- To Apply Shadow In Html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shadow and outline in CSS</title>
+    <style>
+        .box{
+            margin:20px;
+            border:2px solid blue;
+            padding:25px;
+
+            border-radius:32px; 
+            /* to make border curve , outline doesn't have this property */
+
+            outline:2px solid black;
+            /* outline doesn't take up space they are drawn around the element, outside of any border. 
+            it has a uniform width, but border have variable width.*/
+
+            outline-offset:6px;
+            /* using this property you can set space btw border or edge and the outline */
+
+            /* box-shadow:(h-offset v-offset blur spread color inset) */
+            box-shadow: -4px 8px 5px 0px #70a711 ;
+        }
+        .text {
+        text-shadow: 2px 2px 8px rgba(112, 167, 17, 0.7);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box">i am box</div>
+
+    <p class="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus consequuntur ex, modi dolorum aliquam aperiam alias corrupti ab quisquam. Architecto voluptate dolore expedita alias sint inventore nobis? Obcaecati animi nisi blanditiis tenetur maiores totam dolor.</p>
+</body>
+</html>
