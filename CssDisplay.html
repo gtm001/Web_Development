@@ -1,0 +1,54 @@
+<!-- CSS Display Properties -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Display Property</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            /* to make outer box */
+            border: 2px solid blue; 
+
+            /* convert block into inline. */
+            /* display:inline; */
+            
+            margin:34px;
+            padding:45px;
+            width:344px;
+            /* so, as we can see that the applied margin, width and padding doesn't seem effective 
+            from the top of the page., so we do - display:inline-block.*/
+            display:inline-block;
+    
+        }
+
+        /* .box1{ */
+            /* display: none; */
+            /* visibility: hidden; */
+        /* } */
+        /* so with "display:none" the box with "i am box will remove with the content inside along with it's space-Area!
+        but in case of "Visiblity: hidden" it's will not get disapper but it's content along with box does!." */
+
+
+
+    </style>
+
+</head>
+<body>
+    <div class="box box1">i am box</div>
+    <div class="box">i am another box</div>
+    <!-- As div is a block element so, it'll display line by line.  -->
+
+    <span>i am good</span>
+    <span>boy</span>     
+    <!-- As span is an inline element so it'll print without breaking line.
+    it'll be "i am good boy" -->
+
+</body>
+</html>
