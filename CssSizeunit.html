@@ -1,0 +1,86 @@
+<!-- CSS Size-unit -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About  px, rem, em, vh, vw, % & more </title>
+    <style>
+    *{
+        margin:10;
+        padding: 0;
+    }
+
+        /* html{
+            font-size:10;
+        }  */
+
+        /* it's the font-size of the root so, 
+        whenever the font-size of the container is not given then 
+        it will take the font-size of the root i.e 14. */
+        .box{
+            box-sizing: border-box;
+            border:2px solid black;
+            /* width: 2048px; */
+            margin:auto; /*Automatically creates margin from left and right side of the page!,
+             it'll come in the center if it's block element, doesn't work for inline element , for ex- span tag instead of div tag..*/
+
+            width: 80vw;
+            height: 20vh;  
+            background-color: aqua;
+        }
+
+        .container{
+            border:2px solid black;
+            margin: 23px auto; /*here 23px is the margin between vertical
+             and the horizontal box and Auto is use to place the box in the center.*/
+            font-size:18px;
+            /*By default the font-size take always 16px. */
+            width: 80vw;
+            height:80vh; /*takes 80% height of the view port!*/
+            background-color: aqua;
+
+            min-height: 50vh;
+            /*So, it's minimum height will be 100 and for max there is no limit!*/
+
+        }
+        .container p{
+
+            width:50%;
+            /*So, it'll take 50% of it's parent .(here parent is container class).*/
+
+            font-size: 2em; 
+            /* in this the para inherit the font-size from container and with 2em it'll make it twice the size, with 1 em there willbe no any effect on font-size!.*/
+
+            /* font-size: 2rem; */
+            /*in case of 2rem it'll inherit the font-size of the root.-*/
+        }
+
+        .mycont{
+            box-sizing: border-box;
+            border:2px solid skyblue;
+            color:white;
+            background-color: black;
+            width:40vw;
+
+            /* width:100vmin; */
+            /*Always remember that vmin in case of pc is height and in case of mobile is width.*/
+            
+            margin:10px auto;
+        }
+
+
+        
+    </style>
+</head>
+<body>
+    <div class="box">This is a box!</div>
+
+    <div class="container"> <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio ipsa a hic dolore rerum quas dignissimos placeat excepturi unde totam officiis aperiam, error tenetur recusandae modi odio consequuntur vitae labore? Voluptatem, quibusdam cum. Dolorem velit labore saepe nisi voluptatum, id inventore magnam quidem. Suscipit quos dignissimos exercitationem nihil perspiciatis deserunt ullam error dolorum totam.</p></div>
+
+    <div class="mycont">
+        This is another Div.
+    </div>
+</body>
+</html>
