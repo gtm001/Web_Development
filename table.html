@@ -1,0 +1,72 @@
+<!-- Table Formation -->
+
+<html>
+    <head>
+        <title>Table formation</title>
+        <style>
+            table {
+                border-collapse: collapse;
+                width: 100%;
+            }
+    
+            th,td {
+                border: 1px solid black;
+                padding: 8px;
+                text-align: left;
+            }
+    
+            caption {
+                text-align: left;
+                font-weight: bold;
+            }
+    
+            tfoot td {
+                font-weight: bold;
+            }
+        </style>
+
+    </head>
+    <body>
+        <p>Here are the info of some student of the class with roll num and marks.</p>
+        <table>
+
+            <caption>Student Information</caption>
+            <!-- will add caption to the table -->
+
+            <thead>
+            <!-- will add the heading to the table -->
+            <tr>
+                <th>NAME</th>
+                <th>ROLL-NO</th>
+                <th>MARKS</th>
+            </tr>
+            </thead>
+            <tbody> 
+            <!-- use to put data inside the table -->
+            <tr>
+            <td>Aman</td>
+            <td>01</td>
+            <td>25</td>
+            </tr>
+            <tr>
+            <td>Abhay</td>
+            <td>02</td>
+            <td>30</td>
+            </tr>
+            <tr>
+                <td>Shub</td>
+                <td>02</td>
+                <td>30</td>
+            </tr>
+            <tfoot>
+            <!-- use to give ending to the table -->
+                <tr>
+                    <td colspan="2"> Total:</td>
+                    <!-- colspan will merge two cell of the column -->
+                    <td>85</td>
+                </tr>
+            </tfoot>
+        </table>
+
+    </body>
+</html>
