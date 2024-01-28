@@ -1,0 +1,57 @@
+<!-- Styling In List -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styling In List</title>
+    <style>
+        
+        nav ul li{
+            border:1px solid black;
+            padding :23px;
+            list-style:square;
+
+            list-style-position:inside; 
+            /* initially, the position of the marker is outside but on applying thhis
+            it will come in inside. */
+
+            background-color: yellow;
+            
+
+            list-style-type:"❤️‍🔥";
+            /*by doing this we can also apply anyy emoji in place of marker. */
+
+            list-style-image:url("Animated-GIF-Banana.gif");
+            /* by doing this we can use any image/gif at the place of marker. */
+
+            /* but if we want to add multiple properties then: */
+            list-style: inside  disc;
+            /* or if we want to add this two then:- */
+            list-style: inside  url("5eeea355389655.59822ff824b72.gif");
+
+            /* list-style:none; */
+            /* it'll remove the marker */
+
+        }
+    </style>
+
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>
+                HOME
+            </li>
+            <li>
+                CONTACT
+            </li>
+            <li>
+                ABOUT
+            </li>
+        </ul>
+    </nav>
+</body>
+</html>
