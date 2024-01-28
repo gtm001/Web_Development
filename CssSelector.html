@@ -1,0 +1,106 @@
+<!-- CSS Selector. -->
+
+<html>
+<head>
+<title>CSS Selector</title>
+<style>
+    div{
+        background-color: yellow;
+        color:red;
+        /* Element selector */
+    }
+
+    .red{      /* ".red" means class is red*/
+        background-color: aquamarine;
+        color:blue;
+        /* Class Selector, it will effect only on the given class="red" */
+    }
+
+    #green{    /* #green means ID is green. */
+        background-color: cadetblue;
+        color:blue;
+        /* ID selector */
+    }
+
+    div > p{  /*Para inside DiV*/
+        color:brown;
+        background-color: chartreuse;
+        /* child Selector */
+    }
+    /* it will only effect the paragraph just inside the div ,
+     if para is inside any other tag instead div tag then it'll not work! */
+
+    div p{
+        color:white;
+        background-color: black;
+        /* Descendant Selector */
+    }
+    /* it'll effect on para doesn't matter 
+    it's inside any other tag under div, like here it's under article tag. */
+
+    *{
+        margin:0;
+        padding:0;
+        /* Universal selector */
+    }
+
+    a:visited{
+        color:orange;
+        /* Pseudo selector */
+    }
+    /* it will do colour effect on the given link in the anchor tag. */
+
+    a:link{
+        color:green;
+        /* it'll show the green colour of the unvisited link. */
+    }
+
+    a:active{
+        background-color: yellow;
+        /* while clicking on the link it's colour will become yellow! */
+    }
+
+    a:hover{
+        background-color: skyblue;
+        /* while hovering on the link it's colour will be shown skyblue. */
+
+    }
+    p:first-child{
+        background-color: grey;
+        /* para background will be grey everywhere if 
+        ,it'll be the first child of his parent,
+        Apply this property if para is the first child of his parent. */
+    }
+
+    [data=a]{
+        color:pink;
+        /* Attribute Selector */
+    }
+
+
+    </style>
+</head>
+<body>
+
+<div>
+<article> 
+    <h1>hellow</h1>
+    <p>hi! i am PARA.</p>
+</article>
+</div>
+
+<main class="one">
+    <p>i am gautam.</p>
+    <p>i am good!</p>
+</main>
+<a href="https://google.com">Google</a>
+<a href="https://facebook.com">Facebook</a>
+
+<div class="red">I am another DIV.</div>
+
+<p id="green">i am paragraph.</p>
+
+<p data = "a">This is Atrribute selector</p>
+
+</body>
+</html>
