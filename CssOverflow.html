@@ -1,0 +1,53 @@
+<!-- CSS Overflow Property!  -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Overflow</title>
+    <style>
+        .box{
+            border:2px solid black;
+            height:10vh;
+            width:50vw;
+            background-color: aqua;
+
+            overflow:scroll;
+            /* overflow:auto; */
+            /* here, the main difference btw overflow scroll and auto is that , in scroll 
+            it will always provide scroll button in the page of the content rather it's 
+            essential or not But in case of Auto Scroll bar will only show, when it's essential. */
+
+            /* white-space:nowrap; */
+            /* so, in this case it'll only show horizontal scroll, it'll disapper
+            vertical scroll. */
+
+            text-overflow:ellipsis;
+            /* it'll add "..."  */
+
+            /* overflow:clip; */
+            /* it'll hide the overflow content */
+
+            /* overflow-y:hidden;  */
+            /* it'll hide scroll button of y direction. */
+
+            /* overflow-x:hidden;  */
+            /* it'll hide scroll button of x direction. */
+
+            /* overflow:auto hidden; */
+             overflow:hidden scroll;
+             /* it means hide the scroll of x and keep the scroll of y. */
+            /* overflow:scroll hidden; */
+
+        }
+    </style>
+
+</head>
+<body>
+    <div class="box">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam molestiae soluta ipsum eaque, ea ratione iusto enim? Sapiente ipsa, accusantium tenetur earum aut culpa, similique dolore aspernatur optio hic cum! Reiciendis error mollitia veritatis in maxime natus quaerat fugit voluptatum magnam, sed, porro ad corrupti?, ipsum dolor sit amet consectetur adipisicing elit. Eos non nesciunt beatae dolor fugit deserunt sit recusandae corrupti, libero eius adipisci ut obcaecati pariatur aperiam, provident vitae unde quia numquam? Sunt iure magnam, quod in eligendi veritatis fugiat numquam explicabo reprehenderit modi ea sint tempore.ipsum dolor sit amet consectetur adipisicing elit. Atque, esse? Ea laborum facere esse. Ea, repellat eaque incidunt maxime ducimus mollitia voluptatibus. Deleniti obcaecati aut saepe sit quisquam, natus culpa cum similique itaque veniam quas doloremque totam facilis odio minus ab, provident explicabo iusto! Porro.
+    </div>
+    
+</body>
+</html>
