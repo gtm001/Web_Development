@@ -1,0 +1,66 @@
+<!-- About the basic formation of Form -->
+
+<html>
+<head>
+<title>About making form</title>
+</head>
+<body>
+    <form action="post">
+    <div>
+    <label for="username">Username:
+        <!-- use to provide label -->
+    </label>
+    <input type="text" id="username" name="username" placeholder="enter your name.." >
+    </div>
+    <div>
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" placeholder="enter your password">
+    </div>
+    <div>
+    <label>gender: </label>
+    <label for="male">male</label>
+    <input type="radio" id="male" name="gender" value="male">
+    <!-- radio(to select any one from the given option) -->
+    <label for="female">female</label>
+    <input type="radio" id="female" name="gender" value="female">
+    <!-- here name=gender for the both of the cases to selct any one of the given option -->
+
+    <div>
+        <label for="file">Add your photo-</label>
+        <!-- to attach a file from the folder -->
+        <input type="file" id="file" name="file">
+    </div>
+    <label for="date & time">select today's date with time-</label>
+    <input type="datetime-local" id="date & time" name="date & time"> 
+    <!-- "datetime-local" to select date and time together -->
+    <div>
+    <label for="week">select week-</label>
+    <input type="week" id="week" name="week">
+</div>
+    <div>
+        <label for="month">select month-</label>
+        <input type="month" id="month" name="month">
+    </div>
+    <div>
+        <label for="subscribe">subscribe</label>
+        <input type="checkbox" id="subscribe" name="subscribe" value="yes">
+    </div>
+    
+    <div> 
+        <textarea name="comment" row="5" column="30">enter your comment: </textarea>
+    </div>
+    <select name="course" >
+        <option value="BTECH">Btech</option>
+        <option value="BCA">bca</option>
+        <option value="MCA">mca</option>
+        <option value="MBA">mba</option>
+    </select>
+    <div>
+        <label for="reset"></label>
+        <input type="reset" id="reset" name="reset">
+    </div>
+    <input type="submit" value="submit">
+    <!-- provides submit button -->
+    </form>
+</body>
+</html>
