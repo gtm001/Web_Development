@@ -1,0 +1,96 @@
+<!-- About CSS Position Property:  -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Position Property!</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            height:133px;
+            width:80vw;
+            border:2px solid black;
+            padding: 3px;
+            margin:3px;
+        }
+
+        .box1{
+            background-color: red;
+            /* position:relative; */
+            /* We the help of 2. relative position we can apply position change such as
+            :- top, bottom, left, right, z-index, etx */
+            /* z-index:1; */
+            /* z-index is use to flip the coverage of box, as for 
+            example:- intially aqua colour is over box1 and now 
+            it's colour i.e red over the aqua colour */
+
+            position:sticky;
+            width:100%;
+            top:0px;
+            margin:0;
+            height:10px;
+
+            /* 5. Sticky position is use to stick the remaining content inside it! */
+        
+            
+
+        }
+        .box2{
+            background-color: aqua;
+            /* position:relative; */
+            /* bottom:30px; */
+            /* left:20px; */
+            /* position:fixed; */
+            /* 4. in Fixed position, here the box will be gets freeze on their position
+            it'll generally done to hide the content. */
+        }
+        .box3{
+            background-color: black;
+            /* position:absolute; */
+            /* top:4px; */
+            /* left:17px; */
+            /* IF we apply 3.Absolute postion then it'll apply to the nearest positioned
+            element(parent). for ex:- in this case it'll first go to the his parent i.e the class"parent"
+            where it'll not able to find any position element....so, at last it'll go to the html tag and then 
+            it'll apply it's postion effect accordingly.
+             */
+        }
+        .box4{
+            background-color: brown;
+        }
+        
+
+        /* so, in 1.static postion(by default property.) there will'be no any effect of position.
+        we can't use property like top, bottom etc. in static position. */
+
+        .parent{
+            border:2px solid black;
+            padding:43px;
+            margin:34px;
+            height:1500px;
+            position:absolute;
+        }
+
+
+        
+    </style>
+</head>
+<body>
+    <div class="parent">
+    <div class="box box1"></div>
+    <div class="box box2"></div>
+    <div class="box box3"></div>
+    <div class="box box4"></div>
+    </div>
+</body>
+</html>
+
+
+<!-- As we know about Absolute position that it only apply to the nearest positioned parent
+or element apart from the positioned elememt it also treat
+Transform, Filter,Persepective properties as parent positioned. -->
