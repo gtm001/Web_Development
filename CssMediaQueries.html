@@ -1,0 +1,72 @@
+
+<!-- CSS media Queries -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS media Queries</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+        body{
+            background-color: yellow;
+        }
+        /* syntax:-
+        @media only/not mediatype and(expression){
+            //css code.
+        }; */
+        /* .media-type: screen, all, print,speech */
+
+        @media screen and (orientation:landscape){
+            body{
+                border:2px solid purple;
+                /* purple border appers when landscape! */
+            }
+        }
+        @media only screen and (max-width:455px){
+            body{
+                background-color: green;
+                 
+            }
+
+            .boxes{
+                flex-direction: column;
+                /* to flex direction when width is less than 455px,
+                Although it's not a good practice! */
+            }
+
+            /* these effects are apply over the devices having width less tan 455px */
+        }
+
+
+        .box{
+            width:344px;
+            height:344px;
+            background-color: steelblue;
+            Padding:3px;
+            margin: 3px;
+        }
+
+        .boxes{
+            display:flex;
+        
+        }
+        /* to make the boxes inline (later, i'm gonna add a detailed code on Flex.) */
+
+    </style>
+</head>
+<body>
+    <div>I am here!</div>
+
+    <div class="boxes">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+    
+</body>
+</html>
