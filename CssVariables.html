@@ -1,0 +1,73 @@
+<!-- CSS variable -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Variable</title>
+    <style>
+    
+    /* global variable. */
+    :root{  
+        --color:red;
+        --seccolor:rgb(132, 13, 13);
+        --defpad:23px;
+        --defop:0.2;
+
+        /* We can't only do effect on the colour by using Css variable although we can also do effect on the other types such as padding,margin,optical etc. */
+    }
+
+    *{
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .nav{
+        /* background-color:green; */
+        background-color:var(--color);
+    }
+    .container{
+        /* background-color: greenyellow; */
+        background-color: var(--seccolor);
+    }
+
+    ul{
+        display:flex;
+    }
+
+    ul li{
+        /* padding:30px; */
+        padding:var(--defpad);
+        opacity: var(--defop);
+        list-style: none;
+        border:2px solid var(--seccolor);
+
+    }
+
+    ul li:first-child{
+        /* Local Variable */
+        /* --color:rgb(39, 3, 47); */
+        background-color: var(--color);
+
+        /* background-color: var(--color, yellow);
+        if color-- variable is not there then , it's color will become yellow. */
+    }
+    </style>
+
+</head>
+<body>
+    <div class="nav">
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </div>
+
+    <div class="container">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda non debitis odit nemo nihil cumque obcaecati porro a quaerat saepe, dolor doloremque quo quia voluptatum? Quae consequatur aliquam repudiandae, rem inventore dicta voluptas, delectus facere esse deleniti in tempore minima totam et illo, aliquid animi!
+    </div>
+    
+</body>
+</html>
